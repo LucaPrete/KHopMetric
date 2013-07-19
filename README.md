@@ -11,7 +11,7 @@ This project depends on Floodlight, which can be found here:
 It has been tested with Mininet, which can be found here:
  [Mininet project on GitHub](https://github.com/mininet/mininet).
  
-The module has been developed using the Yen-KShortestPath alghoritm, which can be found here:
+The module has been developed using the Yen-KShortestPath algorithm, which can be found here:
  [Yen-k-shortest-path project on Google code](http://code.google.com/p/k-shortest-paths/).
 
 
@@ -28,7 +28,7 @@ The K-Hop-Metric module
 =======================
 
 The K-Hop-Metric module is a modified version of the default Floodlight 0.90 Topology module. The dijkstra method in
-the TopologyInstance class has been replaced with a new one, using the Yen-K-Shortest-Path alghoritm to speed up the
+the TopologyInstance class has been replaced with a new one, using the Yen-K-Shortest-Path algorithm to speed up the
 convergence after a fault.
 By default, after a fault, the Topology module recalculates all paths and broadcast trees from and to each node.
 The new module uses a cache and precalculates K paths (where K is a number choosen by the network admin) per each couple
